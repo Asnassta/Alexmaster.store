@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<title>Мастерская подарков от Алекса</title>
+</head>
+<body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="close" viewBox="0 0 32 32">
+			<g data-name="Layer 2" id="Layer_2"><path d="M4,29a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42l24-24a1,1,0,1,1,1.42,1.42l-24,24A1,1,0,0,1,4,29Z"/><path d="M28,29a1,1,0,0,1-.71-.29l-24-24A1,1,0,0,1,4.71,3.29l24,24a1,1,0,0,1,0,1.42A1,1,0,0,1,28,29Z"/></g><g id="frame"></g>
+		</symbol>
+	</svg>
+	<div class="wrapper">
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__row">
+						<div class="header__title">
+							<div class="burger">
+								<span class="burger__item"></span>
+							</div>
+							<a href="/" class="header__logo">
+								<img src="assets/images/logo.png" alt="">
+							</a>
+							<div class="header__subtitle">Подарки для людей,<br> у которых все есть</div>
+						</div>
+						<div class="menu">
+							<div class="menu__col header-phone">
+								<a href="tel:+74957409819" class="header-phone__link header-phone__link_noicon">+7 (495) 740-98-19</a>
+								<a href="tel:+79779266169" class="header-phone__link">
+									<img src="assets/images/whatssap.svg" alt="">
+									<span>+7 (977) 926-61-69</span>
+								</a>
+							</div>
+							<div class="menu__col menu__col_address">
+								<div class="menu__infobox">
+									<img src="assets/images/map-icon.svg" alt="">
+									<span>г.Москва, ул. Александры Монаховой, д 103</span>
+								</div>
+							</div>
+							<div class="menu__col">
+								<a href="#" class="menu__infobox menu__infobox_btn menu-search">
+									<img src="assets/images/search.svg" alt="">
+									<span>Поиск</span>
+								</a>
+								<div class="menu-search__form">
+									<form action="#">
+										<input type="text" placeholder="Найти подарок">
+									</form>
+									<div class="menu-search__close">
+										<svg>
+											<use xlink:href="#close"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="menu__col">
+								<a href="#" class="menu__infobox menu__infobox_btn">
+									<div class="menu__shopbag">
+										<img src="assets/images/shopping-bag.svg" alt="">
+										<span class="menu__shopbag-number">0</span>
+									</div>
+									<span>Корзина</span>
+								</a>
+							</div>
+							<div class="menu__col">
+								<a href="#" class="menu__infobox menu__infobox_btn">
+									<img src="assets/images/profile.svg" alt="">
+									<span>Войти</span>
+								</a>
+							</div>
+						</div>
+						<div class="menu-mobile">
+							<div class="menu-mobile__inner">
+								<ul class="menu-mobile__list">
+									<li><a href="#" class="menu-mobile__link">О компании</a></li>
+									<li><a href="#" class="menu-mobile__link">Партнёрам</a></li>
+									<li><a href="#" class="menu-mobile__link">Создать подарок</a></li>
+									<li><a href="#" class="menu-mobile__link">Отзывы</a></li>
+									<li><a href="#" class="menu-mobile__link">Контакты</a></li>
+								</ul>
+								<div class="menu-mobile__item">
+									<img src="assets/images/map-icon.svg" alt="">
+									<span>г.Москва, ул. Александры Монаховой, д 103</span>
+								</div>
+								<div class="menu-mobile__phones">
+									<a href="tel:+74957409819" class="menu-mobile__item menu-mobile__item_phone  menu-mobile__item_phone-noicon">+7 (495) 740-98-19</a>
+									<a href="tel:+79779266169" class="menu-mobile__item menu-mobile__item_phone">
+										<img src="assets/images/whatssap.svg" alt="">
+										<span>+7 (977) 926-61-69</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__row header__row_drop">
+						<div class="catalog-drop">
+							<div class="catalog-drop__btn">
+								<span class="catalog-drop__btn-text">Каталог</span>
+								<div class="catalog-drop__btn-burger">
+									<img src="assets/images/burger.svg" alt="">
+								</div>
+							</div>
+							<div class="catalog-drop__box">
+								<div class="catalog-drop__wrapper">
+									<div class="catalog-drop__inner">
+										<div class="catalog-drop__close">
+											<svg>
+												<use xlink:href="#close"></use>
+											</svg>
+										</div>
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Подарочные наборы</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_1.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Креативные подарки</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_2.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Троны</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_3.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Ключницы</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_4.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Товары для кемпинга</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_5.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Чарки</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_6.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Посуда из бронзы и хрусталя</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_7.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Панно для дома и офиса</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_8.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Ножи</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_9.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Халаты</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_10.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Кожаные фартуки</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_11.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Плакетки</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_12.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Книги</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_13.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Ремни</h4>
+											</div>
+											<div class="catalog-box__photo catalog-box__photo_center">
+												<img src="assets/images/catalog-photo_14.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Фляги</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_15.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+										<div class="catalog-box">
+											<a href="#" class="catalog-box__boxlink"></a>
+											<div class="catalog-box__content">
+												<h4 class="catalog-box__title">Статуэтки</h4>
+											</div>
+											<div class="catalog-box__photo">
+												<img src="assets/images/catalog-photo_16.png" alt="">
+											</div>
+										</div><!--/catalog-box-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<nav class="header__nav">
+							<a href="#" class="header__link">О компании</a>
+							<a href="franchisees.html" class="header__link">Партнёрам</a>
+							<a href="#" class="header__link">Создать подарок</a>
+							<a href="#" class="header__link">Отзывы</a>
+							<a href="#" class="header__link">Контакты</a>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="intro">
+				<div class="container">
+					<div class="slider-arrows">
+						<div class="slider-arrow slider-arrow_prev">
+							<img src="assets/images/slider-arrow.svg" alt="">
+						</div>
+						<div class="slider-arrow slider-arrow_next">
+							<img src="assets/images/slider-arrow.svg" alt="">
+						</div>
+					</div>
+					<div class="intro__slider">
+						<div class="intro__slide">
+							<div class="intro__inner">
+								<div class="intro__infobox">
+									<h1 class="intro__title">“Мы создаем подарки для людей, у которых всё есть!”</h1>
+									<div class="intro__btn intro__btn-subscribe">
+										<a href="#" class="btn-orange" data-scroll="catalog">
+											<span>Смотреть каталог</span>
+											<img src="assets/images/arrow.svg" alt="">
+										</a>
+										<div class="intro__subscribe">
+											<img src="assets/images/subscribe.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="intro-photobox">
+									<div class="intro-photobox__founder">
+										<img src="assets/images/founder.png" alt="">
+									</div>
+									<div class="intro-photobox__description">Основатель мастерской Ales Tsiprush</div>
+									<div class="intro-photobox-inst">
+										<a href="#" target="blank"></a>
+										<div class="intro-photobox-inst__btn">
+											<div class="intro-photobox-inst__icon">
+												<img src="assets/images/inst-icon.svg" alt="">
+											</div>
+											<div>Следите за нами в инстаграм</div>
+										</div>
+										<div class="intro-photobox-inst__photo">
+											<img src="assets/images/inst-photo.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!--/intro__slide-->
+						<div class="intro__slide">
+							<div class="intro__inner">
+								<div class="intro__infobox">
+									<h2 class="intro__title">Эксклюзивные предметы  интерьера</h2>
+									<div class="intro__btn intro__btn-subscribe">
+										<a href="#" class="btn-orange" data-scroll="catalog">
+											<span>Смотреть каталог</span>
+											<img src="assets/images/arrow.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="intro-photobox">
+									<div class="intro-photobox__photo intro-photobox__photo_2">
+										<img src="assets/images/intro-photo_2.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div><!--/intro__slide-->
+						<div class="intro__slide">
+							<div class="intro__inner">
+								<div class="intro__infobox">
+									<h2 class="intro__title">Аксессуары из редких пород дерева</h2>
+									<div class="intro__btn intro__btn-subscribe">
+										<a href="#" class="btn-orange" data-scroll="catalog">
+											<span>Смотреть каталог</span>
+											<img src="assets/images/arrow.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="intro-photobox">
+									<div class="intro-photobox__photo intro-photobox__photo_3">
+										<img src="assets/images/intro-photo_3.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div><!--/intro__slide-->
+						<div class="intro__slide">
+							<div class="intro__inner">
+								<div class="intro__infobox">
+									<h2 class="intro__title">Подарочные бокалы из цветных металлов</h2>
+									<div class="intro__btn intro__btn-subscribe">
+										<a href="#" class="btn-orange" data-scroll="catalog">
+											<span>Смотреть каталог</span>
+											<img src="assets/images/arrow.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="intro-photobox">
+									<div class="intro-photobox__photo intro-photobox__photo_4">
+										<img src="assets/images/intro-photo_4.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div><!--/intro__slide-->
+						<div class="intro__slide">
+							<div class="intro__inner">
+								<div class="intro__infobox">
+									<h2 class="intro__title">Подарочные Наборы для кемпинга и пикника</h2>
+									<div class="intro__btn intro__btn-subscribe">
+										<a href="#" class="btn-orange" data-scroll="catalog">
+											<span>Смотреть каталог</span>
+											<img src="assets/images/arrow.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="intro-photobox">
+									<div class="intro-photobox__photo intro-photobox__photo_5">
+										<img src="assets/images/intro-photo_5.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div><!--/intro__slide-->
+						<div class="intro__slide intro__slide_wb">
+							<div class="intro-wb">
+								<div class="intro-wb__photo intro-wb__photo_left">
+									<img src="assets/images/gift-wb_1.png" alt="">
+								</div>
+								<div class="intro-wb__info">
+									<h2 class="intro-wb__title">
+										<span>Мы на Wildberries,<br> залетай на акцию!</span>
+									</h2>
+									<a href="#" class="intro-wb__btn">
+										<span>Смотреть акции</span>
+										<img src="assets/images/wb-arrow.svg" alt="">
+									</a>
+								</div>
+								<div class="intro-wb__photo intro-wb__photo_right">
+									<img src="assets/images/gift-wb_2.png" alt="">
+								</div>
+							</div><!--/intro-wb-->
+						</div><!--/intro__slide-->
+					</div>
+					<div class="intro__jivosite">
+						<a href="#"><img src="assets/images/logo_jivosite.png" alt=""></a>
+					</div>
+				</div>
+			</section><!--/intro-->
+			<section class="catalog section" id="catalog">
+				<div class="container">
+					<h3 class="section-title">Каталог</h3>
+					<div class="catalog-search">
+						<form action="#">
+							<div class="catalog-search__input">
+								<input type="text" placeholder="Найти подарок">
+								<button type="submit"></button>
+							</div>
+						</form>
+					</div>
+					<div class="catalog__inner">
+						<div class="catalog-box catalog-box_33">
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Подарочные наборы</h4>
+								<ul class="catalog-box__menu">
+									<li><a href="#" class="catalog-box__link">Наборы для кемпинга</a></li>
+									<li><a href="#" class="catalog-box__link">Наборы для пикника</a></li>
+									<li><a href="#" class="catalog-box__link">Пано с шампурами</a></li>
+									<li><a href="#" class="catalog-box__link">Наборы шампуров</a></li>
+									<li><a href="#" class="catalog-box__link">Шампуры</a></li>
+								</ul>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_1.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_66">
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Креативные подарки</h4>
+								<ul class="catalog-box__menu">
+									<li><a href="#" class="catalog-box__link">Мясник</a></li>
+									<li><a href="#" class="catalog-box__link">Писатель</a></li>
+									<li><a href="#" class="catalog-box__link">Наливатор</a></li>
+									<li><a href="#" class="catalog-box__link">Игровой</a></li>
+									<li><a href="#" class="catalog-box__link">Банный</a></li>
+								</ul>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_2.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_33">
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Троны</h4>
+								<ul class="catalog-box__menu">
+									<li><a href="#" class="catalog-box__link">Базовые троны</a></li>
+									<li><a href="#" class="catalog-box__link">Хозяин</a></li>
+									<li><a href="#" class="catalog-box__link">Хозяин дома</a></li>
+									<li><a href="#" class="catalog-box__link">Заядлый охотник</a></li>
+									<li><a href="#" class="catalog-box__link">Лучший рыбак</a></li>
+									<li><a href="#" class="catalog-box__link">Хозяин года</a></li>
+								</ul>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_3.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_33">
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Ключницы</h4>
+								<ul class="catalog-box__menu">
+									<li><a href="#" class="catalog-box__link">Ключницы в деревянном багете со стеклом</a></li>
+									<li><a href="#" class="catalog-box__link">Ключницы в кожаном багете</a></li>
+									<li><a href="#" class="catalog-box__link">Ключницы в пластиковом багете со стеклом</a></li>
+									<li><a href="#" class="catalog-box__link">Ключницы из дерева, цветная УФ-печать на полимерном шильде</a></li>
+									<li><a href="#" class="catalog-box__link">Ключницы из дерева, цветной 3-Д шильд из полистирола</a></li>
+									<li><a href="#" class="catalog-box__link">Ключницы<br> исторические</a></li>
+								</ul>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_4.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_33">
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Товары для кемпинга</h4>
+								<ul class="catalog-box__menu">
+									<li><a href="#" class="catalog-box__link">Мобильная кухня</a></li>
+									<li><a href="#" class="catalog-box__link">Хищник</a></li>
+									<li><a href="#" class="catalog-box__link">Лопата мультитуп</a></li>
+									<li><a href="#" class="catalog-box__link">Зубр 12 в 1</a></li>
+									<li><a href="#" class="catalog-box__link">Дипломат 6 царей</a></li>
+								</ul>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_5.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_50">
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Чарки</h4>
+								<ul class="catalog-box__menu">
+									<li><a href="#" class="catalog-box__link">Стопки-перевертыши со стеклянными чарками в картонных коробках</a></li>
+									<li><a href="#" class="catalog-box__link">Стопки-перевертыши с латунными чарками в картонных коробках</a></li>
+									<li><a href="#" class="catalog-box__link">Стопки-перевертыши с латунными чарками</a></li>
+									<li><a href="#" class="catalog-box__link">Стопки-перевертыши со стеклянными чарками</a></li>
+									<li><a href="#" class="catalog-box__link">Комплектующие</a></li>
+								</ul>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_6.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_50">
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Посуда из бронзы и хрусталя</h4>
+								<ul class="catalog-box__menu">
+									<li><a href="#" class="catalog-box__link">Бокалы под бренди, виски, коньяк, шампанское</a></li>
+									<li><a href="#" class="catalog-box__link">Подстаканники объемные</a></li>
+									<li><a href="#" class="catalog-box__link">Пивные бокалы</a></li>
+									<li><a href="#" class="catalog-box__link">Рюмки перевертыши</a></li>
+								</ul>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_7.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_50">
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Панно для дома и офиса</h4>
+								<ul class="catalog-box__menu">
+									<li><a href="#" class="catalog-box__link">Панно большое историческое</a></li>
+									<li><a href="#" class="catalog-box__link">Панно малое</a></li>
+									<li><a href="#" class="catalog-box__link">Панно среднее</a></li>
+								</ul>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_8.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_50">
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Ножи</h4>
+								<ul class="catalog-box__menu">
+									<li><a href="#" class="catalog-box__link">Авторские ножи</a></li>
+									<li><a href="#" class="catalog-box__link">Ножи и тяпки</a></li>
+									<li><a href="#" class="catalog-box__link">Финки</a></li>
+								</ul>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_9.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_20">
+							<a href="#" class="catalog-box__boxlink"></a>
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Халаты</h4>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_10.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_20">
+							<a href="#" class="catalog-box__boxlink"></a>
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Кожаные фартуки</h4>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_11.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_20">
+							<a href="#" class="catalog-box__boxlink"></a>
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Плакетки</h4>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_12.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_20">
+							<a href="#" class="catalog-box__boxlink"></a>
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Книги</h4>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_13.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+						<div class="catalog-box catalog-box_20">
+							<a href="#" class="catalog-box__boxlink"></a>
+							<div class="catalog-box__content">
+								<h4 class="catalog-box__title">Ремни</h4>
+							</div>
+							<div class="catalog-box__photo">
+								<img src="assets/images/catalog-photo_14.png" alt="">
+							</div>
+						</div><!--/catalog-box-->
+					</div>
+				</div>
+			</section><!--/catalog-->
+			<section class="application section" id="application">
+				<div class="container">
+					<div class="application__box">
+						<div class="application__header">
+							<h5 class="application__title">Не нашли то, что искали?</h5>
+							<div class="application__icon">
+								<img src="assets/images/question-icon.svg" alt="">
+							</div>
+						</div>
+						<div class="application__subtitle">Оставьте заявку и мы подберем вам нужный товар</div>
+						<div class="application__form">
+							<form action="#">
+								<input type="text" placeholder="Ваше имя">
+								<input type="text" placeholder="Номер телефона*">
+								<button type="submit">Отправить</button>
+							</form>
+						</div>
+						<div class="application__description">Нажимая кнопку «‎Отправить»‎ вы соглашаетесь с политикой обработки персональных данных</div>
+					</div>
+				</div>
+			</section><!--/application-->
+			<section class="reviews section">
+				<div class="container">
+					<h3 class="section-title">Отзывы клиентов</h3>
+					<div class="reviews__slider">
+						<div class="reviews__slide">
+							<a href="#" class="reviews__item">
+								<img src="assets/images/reviews-photo.png" alt="">
+							</a>
+						</div><!--/reviews__slide-->
+						<div class="reviews__slide">
+							<a href="#" class="reviews__item">
+								<img src="assets/images/reviews-photo.png" alt="">
+							</a>
+						</div><!--/reviews__slide-->
+						<div class="reviews__slide">
+							<a href="#" class="reviews__item">
+								<img src="assets/images/reviews-photo.png" alt="">
+							</a>
+						</div><!--/reviews__slide-->
+						<div class="reviews__slide">
+							<a href="#" class="reviews__item">
+								<img src="assets/images/reviews-photo.png" alt="">
+							</a>
+						</div><!--/reviews__slide-->
+						<div class="reviews__slide">
+							<a href="#" class="reviews__item">
+								<img src="assets/images/reviews-photo.png" alt="">
+							</a>
+						</div><!--/reviews__slide-->
+					</div>
+					<div class="reviews-nav">
+						<div class="reviews-nav__arrow reviews-nav__arrow_prev">
+							<img src="assets/images/reviews-arrow.svg" alt="">
+						</div>
+						<a href="#" class="reviews-nav__btn">Посмотреть все</a>
+						<div class="reviews-nav__arrow reviews-nav__arrow_next">
+							<img src="assets/images/reviews-arrow.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</section><!--/reviews-->
+			<section class="advantages section">
+				<div class="container">
+					<h3 class="section-title">Почему выбирают нас</h3>
+					<div class="advantages__inner">
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="assets/images/advantages-icon_1.svg" alt="">
+							</div>
+							<div class="advantages__text">Доставка по всему миру</div>
+						</div><!--/advantages__item-->
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="assets/images/advantages-icon_2.svg" alt="">
+							</div>
+							<div class="advantages__text">30.000 довольных клиентов</div>
+						</div><!--/advantages__item-->
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="assets/images/advantages-icon_3.svg" alt="">
+							</div>
+							<div class="advantages__text">Персонализация каждого изделия</div>
+						</div><!--/advantages__item-->
+						<div class="advantages__item">
+							<div class="advantages__icon">
+								<img src="assets/images/advantages-icon_4.svg" alt="">
+							</div>
+							<div class="advantages__text">Только ручная работа</div>
+						</div><!--/advantages__item-->
+					</div>
+				</div>
+			</section><!--/advantages-->
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-menu">
+					<div class="footer-menu__col">
+						<h4 class="footer__title">
+							<span>Мастерская подарков</span>
+							<span>от Алекса</span>
+						</h4>
+						<div class="footer__copyright">2022 © Мастерская от Алекса -<br> Интернет-магазин</div>
+						<a href="#" class="footer__policy">Политика конфиденциальности</a>
+					</div>
+					<div class="footer-menu__col">
+						<h5 class="footer-menu__title">Информация</h5>
+						<ul class="footer-menu__list">
+							<li><a href="#">Магазины</a></li>
+							<li><a href="#">Условия оплаты</a></li>
+							<li><a href="#">Условия доставки</a></li>
+							<li><a href="#">Гарантия на товар</a></li>
+						</ul>
+					</div>
+					<div class="footer-menu__col">
+						<h5 class="footer-menu__title">Контакты</h5>
+						<a href="#" class="footer__btn">
+							<span>Подписаться на рассылку</span>
+							<img src="assets/images/fly-icon.svg" alt="">
+						</a>
+						<div class="footer-menu__info">
+							<div class="footer-phone">
+								<div class="footer-menu__contact">
+									<span class="footer-menu__contact-icon">
+										<img src="assets/images/phone-icon.svg" alt="">
+									</span>
+									<a href="tel:+74957409819" class="footer-menu__contact-phone">+7(495)740-98-19</a>
+								</div>
+								<div class="footer-phone__dropdown">
+									<a href="tel:+74957409819" class="footer-menu__contact">+7(495)740-98-19</a>
+									<a href="tel:+74957409819" class="footer-menu__contact">+7(495)740-98-19</a>
+								</div>
+							</div>
+							<div class="footer-menu__contact">
+								<span class="footer-menu__contact-icon">
+									<img src="assets/images/email-icon.svg" alt="">
+								</span>
+								<a href="mailto:sale@alexmaster.store">sale@alexmaster.store</a>
+							</div>
+							<div class="footer-menu__contact">
+								<span class="footer-menu__contact-icon">
+									<img src="assets/images/bild-icon.svg" alt="">
+								</span>
+								<span>г.Москва ул Александры<br> Монаховой д 103</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-inst">
+					<div class="footer-inst__content">
+						<a href="#" class="footer-inst__icon" target="blank">
+						<img src="assets/images/inst-icon_orange.svg" alt="">
+					</a>
+					</div>
+				</div>
+				<nav class="footer-nav">
+					<div class="footer-nav__menu">
+						<a href="#" class="footer-nav__link">Главная</a>
+						<a href="#" class="footer-nav__link">Каталог</a>
+						<a href="#" class="footer-nav__link">О компании</a>
+						<a href="#" class="footer-nav__link">Партнёрам</a>
+						<a href="#" class="footer-nav__link">Создать подарок</a>
+						<a href="#" class="footer-nav__link">Отзывы</a>
+						<a href="#" class="footer-nav__link">Контакты</a>
+						<a href="#" class="footer-nav__link">
+							<img src="assets/images/profile-icon_orange.svg" alt="">
+							<span>Войти</span>
+						</a>
+					</div>
+					<div class="footer-nav__btn">
+						<a href="#" class="footer-nav__up" data-scroll="header">
+							<span>Наверх</span>
+							<img src="assets/images/arrow-up.svg" alt="">
+						</a>
+					</div>
+				</nav>
+			</div>
+		</footer>
+	</div>
+	
+
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

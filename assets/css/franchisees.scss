@@ -1,0 +1,453 @@
+/*==========Franchisees================*/
+.franchisees-intro {
+	margin-top: 95px;
+	margin-bottom: 120px;
+	&__inner {
+		display: flex;
+		align-items: flex-start;
+	}
+	&__info {
+		padding-top: 30px;
+		width: 46%;
+		padding-right: 90px;
+	}
+	&__photo {
+		width: 54%;
+		img {
+			border-radius: 20px;
+			max-width: 100%;
+		}
+	}
+	&__title {
+		font-family: $ff;
+		font-size: 40px;
+		font-weight: 600;
+		font-style: italic;
+		line-height: 1.2;
+		display: inline-block;
+		background: linear-gradient(to left, #484468 60%, #D69945 100%);
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+  		color: #484468;
+  		margin-bottom: 30px; 
+	}
+	&__subtitle {
+		font-family: $ff;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 1.2;
+		color: $blue;
+		margin-bottom: 50px;
+		span {
+			font-weight: 600;
+			display: inline-block;
+			background: linear-gradient(to left, #484468 10%, #D69945 100%);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+  			color: #D69945;
+		}
+	}
+}
+
+.franchisees-advantages {
+	&__inner {
+		margin-top: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -40px;
+		margin-bottom: -40px;
+		>* {
+			width: calc(33.33333% - 40px);
+			margin-left: 40px;
+			margin-bottom: 40px;
+		}
+	}
+	&__item {
+		padding: 20px 25px;
+		border-radius: 10px;
+		background-color: #fbfbfb;
+		transition: all .3s linear;
+		@media(min-width: 900px) {
+			&:hover {
+				transform: translateY(-10px);
+			}
+		}
+	}
+	&__icon {
+		width: 40px;
+		height: 40px;
+		background-color: $orange;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		margin-bottom: 25px;
+		img {
+			max-width: 70%;
+		}
+	}
+	&__text {
+		font-family: $ff;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.2;
+		color: #444444;
+		span {
+			font-weight: 500;
+			display: inline-block;
+			background: linear-gradient(to left, #484468 10%, #D69945 100%);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+  			color: #D69945;
+		}
+		p {
+			margin-bottom: 7px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.design {
+	&__slider {
+		margin-top: 50px;
+		display: flex;
+		position: relative;
+		&:before {
+			content: "";
+			width: 100%;
+			height: 110%;
+			background-color: $wh;
+			position: absolute;
+			right: 100%;
+			top: -5%;
+			z-index: 100;
+		}
+	}
+	&__slide {
+		margin-left: 40px;
+		img {
+			max-width: 100%;
+		}
+	}
+	&__arrows {
+		margin-top: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__arrow {
+		cursor: pointer;
+		transition: all .2s linear;
+		&_prev {
+			margin-right: 78px;
+			&:hover {
+				transform: translateX(-5px);
+			}
+		}
+		&_next {
+			transform: rotate(180deg);
+			&:hover {
+				transform: rotate(180deg) translateX(-5px);
+			}
+		}
+	}
+	.slick-list {
+		overflow: visible;
+	}
+}
+/*==========/franchisees================*/
+
+/*================Wholesaler=============*/
+.wholesaler {
+	&-intro {
+		margin-top: 50px;
+		margin-bottom: 60px;
+		&__inner {
+			display: flex;
+		}
+		&__info {
+			width: 58%;
+			padding-right: 80px;
+			padding-top: 75px;
+		}
+		&__photo {
+			width: 42%;
+			img {
+				max-width: 100%;
+			}
+		}
+		&__title {
+			font-family: $ff;
+			font-size: 25px;
+			font-weight: 600;
+			font-style: italic;
+			line-height: 1.2;
+			display: inline-block;
+			background: linear-gradient(to left, #484468 60%, #D69945 100%);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+  			color: #484468;
+  			margin-bottom: 24px; 
+		}
+		&__text {
+			font-family: $ff;
+			font-size: 20px;
+			font-weight: 400;
+			color: $blue;
+			line-height: 1.2;
+			p {
+				margin-bottom: 12px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	&-advantages {
+		margin-bottom: 130px;
+		&__inner {
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: -70px;
+			margin-bottom: -30px;
+			>* {
+				width: calc(31% - 70px);
+				margin-left: 65px;
+				margin-bottom: 30px;
+				&:nth-child(even) {
+					width: calc(44% - 70px);
+				}
+				&:nth-child(3) {
+					width: calc(25% - 70px);
+				}
+			}
+		}
+		&__item {
+			display: flex;
+			align-items: center;
+		}
+		&__icon {
+			width: 26px;
+			flex: 0 0 26px;
+			margin-right: 17px;
+			img {
+				width: 100%;
+				height: 26px;
+				object-fit: contain;
+			}
+		}
+		&__description {
+			font-family: $ff;
+			font-size: 17px;
+			font-weight: 500;
+			color: $orange;
+			line-height: 1.2;
+		}
+	}
+}
+/*================/wholesaler=============*/
+
+/*============Adaptive============*/
+@media(max-width: 1130px) {
+	.franchisees {
+		&-intro {
+			margin-top: 60px;
+			&__info {
+				padding-right: 30px;
+			}
+			&__title {
+				font-size: 35px;
+				margin-bottom: 20px;
+			}
+			&__subtitle {
+				font-size: 20px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.wholesaler {
+		&-intro {
+			&__info {
+				padding-right: 30px;
+				padding-top: 25px;
+			}
+			&__text {
+				font-size: 18px;
+			}
+		}
+		&-advantages {
+			margin-bottom: 70px;
+			&__description {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media(max-width: 900px) {
+	.franchisees {
+		&-advantages {
+			&__inner {
+				margin-left: -20px;
+				margin-bottom: -20px;
+				>* {
+					width: calc(33.33333% - 20px);
+					margin-left: 20px;
+					margin-bottom: 20px;
+				}
+			}
+			&__text {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	.franchisees {
+		&-intro {
+			margin-bottom: 70px;
+			&__info {
+				padding-top: 0;
+			}
+			&__title {
+				font-size: 30px;
+			}
+			&__subtitle {
+				font-size: 18px;
+			}
+		}
+		&-advantages {
+			&__inner {
+				margin-top: 30px;
+				>* {
+					width: calc(50% - 20px);
+				}
+			}
+		}
+	}
+	.design {
+		&__slider {
+			margin-top: 30px;
+		}
+		&__slide {
+			margin-left: 20px;
+		}
+	}
+}
+
+@media(max-width: 765px) {
+	.franchisees {
+		&-intro {
+			&__inner {
+				flex-direction: column;
+			}
+			&__info {
+				width: 100%;
+				padding-right: 0;
+				margin-bottom: 30px;
+			}
+			&__photo {
+				width: 100%;
+			}
+		}
+		&-advantages {
+			&__item {
+				padding: 15px 20px;
+			}
+			&__text {
+				font-size: 14px;
+			}
+		}
+	}
+	.wholesaler {
+		&-intro {
+			&__inner {
+				flex-direction: column;
+			}
+			&__info {
+				width: 100%;
+				padding-top: 0;
+				padding-right: 0;
+				margin-bottom: 30px;
+			}
+			&__photo {
+				width: 100%;
+				text-align: center;
+			}
+			&__title {
+				font-size: 18px;
+				margin-bottom: 15px;
+			}
+			&__text {
+				font-size: 14px;
+				p {
+					margin-bottom: 8px;
+				}
+			}
+		}
+		&-advantages {
+			&__inner {
+				margin-left: 0;
+				>* {
+					width: 100%;
+					margin-left: 0;
+					&:nth-child(even) {
+						width: 100%;
+					}
+					&:nth-child(3) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 414px) {
+	.franchisees {
+		&-intro {
+			margin-bottom: 50px;
+			margin-top: 40px;
+			&__title {
+				font-size: 25px;
+			}
+			&__subtitle {
+				font-size: 14px;
+			}
+		}
+		&-advantages {
+			&__inner {
+				margin-left: 0;
+				>* {
+					margin-left: 0;
+					width: 100%;
+				}
+			}
+			&__icon {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.design {
+		&__slider {
+			margin-left: -20px;
+			padding-right: 40px;
+		}
+		&__slide {
+			margin-left: 20px;
+			width: calc(50% - 20px);
+			height: 240px!important;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&__item {
+			height: 100%;
+		}
+	}
+}
